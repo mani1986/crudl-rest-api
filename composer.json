@@ -1,0 +1,16 @@
+{
+    "name": "mani/blog",
+    "authors": [
+        {
+            "name": "Mani Gudvardarson",
+            "email": "mani@bunq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mani\\blog\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

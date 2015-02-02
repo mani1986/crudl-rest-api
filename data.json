@@ -1,0 +1,32 @@
+{
+    "blog": [
+        {
+            "id": 1,
+            "title": "Hey There",
+            "data": "",
+            "body": ""
+        },
+        {
+            "id": 2,
+            "title": "Ho There",
+            "data": "",
+            "body": ""
+        }
+    ],
+    "comment": [
+        {
+            "blog_id": 1,
+            "date": "2014-05-05 12:12:12",
+            "name": "Mick Pow",
+            "email": "mick@pow.com",
+            "text": "Very good blog."
+        }
+    ],
+    "user": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "authKey": "ewroiwuroiewurrroieur034984jkl34j"
+        }
+    ]
+}
