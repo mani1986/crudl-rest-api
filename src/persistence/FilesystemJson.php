@@ -131,9 +131,7 @@ class FilesystemJson extends Persistence
      */
     public function delete()
     {
-        foreach ($this->query as $item) {
-            unset($this->data[$this->object])
-        }
+        // TODO: Implement update() method.
     }
 
     /**
