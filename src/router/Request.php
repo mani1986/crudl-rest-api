@@ -4,6 +4,8 @@
  */
 namespace mani\blog\router;
 
+use mani\blog\exception\ExceptionBadRequest;
+
 /**
  * Class Request
  *
@@ -15,6 +17,7 @@ class Request
      * Error constants.
      */
     const ERROR_HEADER_REQUEST_URI_NOT_SET = 'Request URI not set.';
+    const ERROR_BAD_REQUEST = 'Bad request';
 
     /**
      * Constants to retrieve values from the $_SERVER global variable.
@@ -81,10 +84,7 @@ class Request
         if (isset($_SERVER[self::REQUEST_URI])) {
             $this->uri = new Uri($_SERVER[self::REQUEST_URI]);
         } else {
-            throw new BunqExceptionUserError(
-                BunqEnumResponseCode::BAD_REQUEST(),
-                [new BunqError(self::ERROR_HEADER_REQUEST_URI_NOT_SET)]
-            );
+            throw new ExceptionBadRequest(self::ERROR_BAD_REQUEST);
         }
     }
 
